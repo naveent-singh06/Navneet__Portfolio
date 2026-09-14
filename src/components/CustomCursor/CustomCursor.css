@@ -1,0 +1,6 @@
+/* ============================= CURSOR ============================= */
+.cursor-dot,.cursor-ring{ position:fixed; top:0; left:0; z-index:9999; pointer-events:none; border-radius:50%; transform:translate(-50%,-50%); }
+.cursor-dot{ width:7px; height:7px; background:var(--cyan); box-shadow:0 0 10px var(--cyan); }
+.cursor-ring{ width:32px; height:32px; border:1px solid rgba(154,163,196,0.4); transition:width .25s var(--ease), height .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:9px; letter-spacing:0.08em; color:var(--cyan); }
+.cursor-ring.hover{ width:60px; height:60px; border-color:var(--cyan); background:rgba(34,211,238,0.08); }
+@media (max-width:860px){ .cursor-dot,.cursor-ring{ display:none; } }

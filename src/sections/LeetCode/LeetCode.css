@@ -1,0 +1,28 @@
+/* ============================= LEETCODE ============================= */
+.lc-shell{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
+@media (max-width:960px){ .lc-shell{ grid-template-columns:1fr 1fr; } }
+@media (max-width:640px){ .lc-shell{ grid-template-columns:1fr; } }
+.lc-profile{ grid-column:span 3; display:flex; align-items:center; gap:20px; padding:26px 28px; flex-wrap:wrap; }
+@media (max-width:960px){ .lc-profile{ grid-column:span 2; } }
+@media (max-width:640px){ .lc-profile{ grid-column:span 1; } }
+.lc-avatar{ width:64px; height:64px; border-radius:16px; background:var(--grad-btn); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:24px; font-weight:700; color:#fff; }
+.lc-profile h3{ font-size:19px; margin-bottom:6px; }
+.lc-badges{ display:flex; gap:8px; flex-wrap:wrap; }
+.lc-badges span{ font-size:11.5px; font-family:var(--font-mono); padding:5px 12px; border-radius:100px; border:1px solid var(--border); color:var(--text-dim); }
+.lc-badges .b-highlight{ background:rgba(34,211,238,0.1); border-color:rgba(34,211,238,0.35); color:var(--cyan); }
+.lc-cta{ margin-left:auto; }
+.stat-tile{ padding:22px; }
+.stat-tile .st-icon{ font-size:20px; margin-bottom:10px; }
+.stat-tile .st-num{ font-family:var(--font-display); font-size:28px; font-weight:700; margin-bottom:2px; }
+.stat-tile .st-label{ font-size:12.5px; color:var(--text-dim); }
+.lc-topics{ grid-column:span 3; padding:26px 28px; }
+@media (max-width:960px){ .lc-topics{ grid-column:span 2; } }
+@media (max-width:640px){ .lc-topics{ grid-column:span 1; } }
+.lc-topics h4{ font-size:15px; margin-bottom:16px; display:flex; align-items:center; justify-content:space-between; }
+.lc-topics h4 a{ font-size:12.5px; font-family:var(--font-mono); color:var(--cyan); }
+.topic-group{ margin-bottom:16px; }
+.topic-group:last-child{ margin-bottom:0; }
+.topic-group .tg-label{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:0.06em; color:var(--text-faint); margin-bottom:8px; }
+.topic-row{ display:flex; flex-wrap:wrap; gap:8px; }
+.topic-chip{ display:flex; align-items:center; gap:7px; font-size:12.5px; padding:8px 14px; border-radius:100px; background:rgba(255,255,255,0.03); border:1px solid var(--border); }
+.topic-chip b{ color:var(--cyan); font-family:var(--font-mono); }

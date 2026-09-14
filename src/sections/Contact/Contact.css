@@ -1,0 +1,7 @@
+/* ============================= CONTACT ============================= */
+.contact-card{ padding:56px; text-align:center; }
+.contact-card h2{ font-size:clamp(30px,5vw,48px); margin-bottom:18px; max-width:720px; margin-left:auto; margin-right:auto; }
+.contact-card p{ color:var(--text-dim); max-width:480px; margin:0 auto 36px; }
+.contact-links{ display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+.clink{ display:flex; align-items:center; gap:10px; padding:13px 22px; border-radius:100px; border:1px solid var(--border-strong); font-size:13.5px; font-weight:500; transition:transform .3s var(--ease), border-color .3s; }
+.clink:hover{ transform:translateY(-3px); border-color:var(--cyan); color:var(--cyan); }

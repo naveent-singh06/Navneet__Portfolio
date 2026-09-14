@@ -1,0 +1,11 @@
+h1,h2,h3{ font-family:var(--font-display); letter-spacing:-0.01em; }
+.eyebrow{ font-family:var(--font-mono); font-size:12px; color:var(--cyan); letter-spacing:0.06em; display:flex; align-items:center; gap:8px; margin-bottom:14px; }
+.eyebrow .bar{ width:22px; height:2px; background:var(--grad-primary); border-radius:2px; }
+.sec-title{ font-size:clamp(28px,4vw,42px); font-weight:700; margin-bottom:14px; }
+.sec-title .accent{ background:var(--grad-text); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.sec-desc{ color:var(--text-dim); max-width:560px; font-size:15.5px; }
+.sec-head{ margin-bottom:52px; }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}

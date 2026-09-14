@@ -1,0 +1,39 @@
+/* ============================= TOKENS ============================= */
+:root{
+  --bg:            #060915;
+  --bg-1:          #0a0f24;
+  --bg-2:          #0d1330;
+  --surface:       rgba(22,29,58,0.55);
+  --surface-solid: #10162f;
+  --border:        rgba(126,150,255,0.16);
+  --border-strong: rgba(140,160,255,0.32);
+  --blue:          #3b7bff;
+  --royal:         #5b6cf9;
+  --purple:        #9b5cf6;
+  --cyan:          #22d3ee;
+  --text:          #f3f5fc;
+  --text-dim:      #9aa3c4;
+  --text-faint:    #5f6890;
+  --success:       #34d399;
+
+  --grad-primary: linear-gradient(115deg, var(--cyan), var(--blue) 55%, var(--purple));
+  --grad-btn: linear-gradient(120deg, var(--blue), var(--purple));
+  --grad-text: linear-gradient(100deg, #7ad7ff, #6d8dff 45%, #b98bff);
+
+  /* live-background system */
+  --glow-a: rgba(59,123,255,0.35);
+  --glow-b: rgba(155,92,246,0.28);
+  --glow-c: rgba(34,211,238,0.22);
+  --particle-line: 120,150,255;
+  --particle-dot:  180,200,255;
+  --scrollbar-track: rgba(255,255,255,0.03);
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --r-lg: 22px;
+  --r-md: 16px;
+  --r-sm: 10px;
+}

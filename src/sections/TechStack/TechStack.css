@@ -1,0 +1,28 @@
+/* ============================= TECH STACK ============================= */
+.stack-shell{ display:grid; grid-template-columns:250px 1fr; gap:24px; }
+@media (max-width:860px){ .stack-shell{ grid-template-columns:1fr; } }
+.stack-sidebar{ padding:22px; align-self:start; position:sticky; top:100px; }
+@media (max-width:860px){ .stack-sidebar{ position:static; } }
+.stack-sidebar h4{ font-size:13px; color:var(--text-faint); font-family:var(--font-mono); letter-spacing:0.05em; margin-bottom:14px; padding:0 6px; }
+.cat-list{ display:flex; flex-direction:column; gap:6px; }
+@media (max-width:860px){ .cat-list{ flex-direction:row; overflow-x:auto; padding-bottom:6px; } }
+.cat-item{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:11px 14px; border-radius:12px; font-size:13.5px; color:var(--text-dim); transition:background .25s, color .25s; white-space:nowrap; }
+.cat-item:hover{ color:var(--text); background:rgba(255,255,255,0.03); }
+.cat-item.active{ background:var(--grad-btn); color:#fff; }
+.cat-item .cnt{ font-family:var(--font-mono); font-size:11px; background:rgba(255,255,255,0.12); padding:2px 8px; border-radius:100px; }
+.cat-item.active .cnt{ background:rgba(255,255,255,0.25); }
+.stack-main{ padding:26px; }
+.stack-main-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:24px; flex-wrap:wrap; gap:8px; }
+.stack-main-head h3{ font-size:20px; }
+.stack-main-head span{ font-size:12.5px; color:var(--text-faint); font-family:var(--font-mono); }
+.stack-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:16px; }
+.tech-card{ padding:20px 16px; text-align:center; display:none; perspective:600px; }
+.tech-card.show{ display:block; }
+.tech-card .ti{ width:52px; height:52px; border-radius:50%; background:rgba(255,255,255,0.04); display:flex; align-items:center; justify-content:center; font-size:26px; margin:0 auto 12px; transition:transform .35s var(--ease); }
+.tech-card:hover .ti{ transform:scale(1.12) rotate(-4deg); }
+.tech-card .tn{ font-size:14px; font-weight:600; margin-bottom:2px; }
+.tech-card .tc{ font-size:11px; color:var(--text-faint); font-family:var(--font-mono); margin-bottom:12px; }
+.tbar{ height:5px; border-radius:4px; background:rgba(255,255,255,0.06); overflow:hidden; margin-bottom:8px; }
+.tbar i{ display:block; height:100%; width:0%; background:var(--grad-primary); border-radius:4px; transition:width 1.1s var(--ease); }
+.tech-card.show .tbar i{ width:var(--lvl); }
+.tlabel{ font-size:11px; color:var(--text-dim); font-family:var(--font-mono); }

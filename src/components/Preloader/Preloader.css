@@ -1,0 +1,8 @@
+/* ============================= PRELOADER ============================= */
+#preloader{ position:fixed; inset:0; z-index:10000; background:var(--bg); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; }
+#preloader .pl-name{ font-family:var(--font-display); font-weight:700; font-size:17px; letter-spacing:0.05em; }
+#preloader .pl-role{ font-family:var(--font-mono); font-size:11px; letter-spacing:0.12em; color:var(--text-faint); }
+#preloader .pl-bar{ width:200px; height:2px; background:var(--border); border-radius:2px; position:relative; overflow:hidden; margin-top:6px; }
+#preloader .pl-bar::after{ content:''; position:absolute; left:0; top:0; bottom:0; width:0%; background:var(--grad-primary); animation:plfill 0.9s var(--ease) forwards; }
+@keyframes plfill{ to{ width:100%; } }
+#preloader.done{ opacity:0; visibility:hidden; transition:opacity .5s var(--ease); }

@@ -1,0 +1,27 @@
+/* ============================= EXPERIENCE / EDU ============================= */
+.exp-edu-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:28px; align-items:start; }
+@media (max-width:900px){ .exp-edu-grid{ grid-template-columns:1fr; } }
+.timeline-card{ padding:32px; position:relative; }
+.timeline-card::before{ content:''; position:absolute; left:32px; top:64px; bottom:32px; width:1px; background:var(--border); }
+.tl-top{ display:flex; align-items:flex-start; gap:16px; margin-bottom:20px; }
+.tl-dot{ width:12px; height:12px; border-radius:50%; background:var(--grad-btn); margin-top:6px; flex:none; box-shadow:0 0 0 5px rgba(91,108,249,0.15); }
+.tl-top h3{ font-size:19px; margin-bottom:4px; }
+.tl-top .tl-org{ font-size:13.5px; color:var(--cyan); font-family:var(--font-mono); }
+.tl-top .tl-period{ margin-left:auto; font-size:12px; color:var(--text-faint); font-family:var(--font-mono); white-space:nowrap; }
+.tl-resp{ padding-left:28px; display:flex; flex-direction:column; gap:9px; }
+.tl-resp li{ font-size:14px; color:var(--text-dim); display:flex; gap:9px; }
+.tl-resp li::before{ content:'▸'; color:var(--purple); flex:none; }
+.edu-stack{ display:flex; flex-direction:column; gap:20px; }
+.edu-card{ padding:28px; }
+.edu-card .ed-deg{ font-size:18px; font-weight:700; margin-bottom:4px; }
+.edu-card .ed-major{ font-size:13.5px; color:var(--text-dim); margin-bottom:14px; }
+.edu-facts{ display:flex; flex-direction:column; gap:10px; }
+.edu-facts .ef-row{ display:flex; justify-content:space-between; font-size:13px; padding:9px 0; border-top:1px solid var(--border); }
+.edu-facts .ef-row .k{ color:var(--text-faint); font-family:var(--font-mono); font-size:11.5px; }
+.cert-card{ padding:24px; }
+.cert-card h4{ font-size:14px; color:var(--text-faint); font-family:var(--font-mono); letter-spacing:0.05em; margin-bottom:16px; }
+.cert-item{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding:14px 0; border-top:1px solid var(--border); }
+.cert-item:first-of-type{ border-top:none; padding-top:0; }
+.cert-item .cn{ font-size:14px; font-weight:600; margin-bottom:3px; }
+.cert-item .cd{ font-size:12.5px; color:var(--text-dim); }
+.cert-item .cp{ font-size:11px; font-family:var(--font-mono); color:var(--text-faint); white-space:nowrap; }
